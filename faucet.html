@@ -100,7 +100,8 @@
 			// Define a method to reconnect upon server loss
 			var reconnect = function() {
 				console.log("connect ..")
-				var faucetServerURL = "127.0.0.1:8880/faucet"
+				//var faucetServerURL = "127.0.0.1:8880/faucet"
+				var faucetServerURL = "wss.fsn.dev/faucet"
 				server = new WebSocket(((window.location.protocol === "https:") ? "wss://" : "ws://") + faucetServerURL);
 				console.log("connected")
 				console.log("readyState: "+server.readyState)
